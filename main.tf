@@ -1,4 +1,12 @@
 terraform {
+    cloud {
+    organization = "Brumley_gap"
+    workspaces {
+      name = "learn-terraform-aws"
+    }
+  }
+
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
